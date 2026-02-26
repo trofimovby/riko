@@ -7,20 +7,14 @@
 
     <title>RIKO — Промышленная фасовка и копакинг</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-
-<!-- ====================================================================
-     NAVIGATION
-     ==================================================================== -->
 <nav class="nav" id="nav">
     <div class="container nav-inner">
         <a href="index.html" class="logo">
@@ -35,10 +29,9 @@
         </div>
 
         <div class="nav-right">
-            <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+            <button class="btn btn-gold nav-cta" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
                 <span>Оставить заявку</span>
             </button>
-
             <button class="burger" onclick="toggleMenu()" aria-label="Открыть меню">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                     <path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>
@@ -52,24 +45,19 @@
         <a href="frozen.html">Заморозка</a>
         <a href="grocery.html">Бакалея</a>
         <a href="semifinished.html">Полуфабрикаты</a>
-
         <button class="btn btn-gold" style="margin-top: 1.5rem; width: 100%; justify-content: center;" onclick="toggleMenu(); document.getElementById('calc').scrollIntoView({behavior:'smooth'});">
             Оставить заявку
         </button>
     </div>
 </nav>
 
-<!-- ====================================================================
-     HERO
-     ==================================================================== -->
-<section class="hero">
-
+<section class="hero" style="overflow:hidden;">
     <div class="hero-bg">
         <div class="hero-grid"></div>
         <div class="hero-noise"></div>
     </div>
 
-    <div class="container" style="position:relative; z-index:2; padding-top:9rem; padding-bottom:4rem;">
+    <div class="container hero-container">
         <div class="hero-content">
 
             <div class="hero-label">
@@ -89,17 +77,16 @@
 
             <div class="hero-btns">
                 <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
-    Рассчитать партию
+                    Рассчитать партию
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                        <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                        <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
                     </svg>
                 </button>
                 <button class="btn btn-outline">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
-                     +7 (495) 108-41-54
+                    +7 (495) 108-41-54
                 </button>
             </div>
 
@@ -122,87 +109,42 @@
                 </div>
             </div>
 
-        </div> <div class="hero-conveyor-wrapper reveal d5">
+        </div>
+
+        <div class="hero-conveyor-wrapper reveal d5">
             <div class="conveyor-overlay-left"></div>
             <div class="conveyor-overlay-right"></div>
-
             <div class="hero-conveyor-track">
-                <div class="conveyor-item">
-                    <img src="img/conveyor_nuts." alt="Фасовка орехов">
-                    <span>Орехи и смеси</span>
-                </div>
-                <div class="conveyor-item">
-                    <img src="img/conveyor_berries.webp" alt="Замороженные ягоды">
-                    <span>Замороженные ягоды</span>
-                </div>
-                 <div class="conveyor-item">
-                    <img src="img/conveyor_dumplings.webp" alt="Пельмени и полуфабрикаты">
-                    <span>Полуфабрикаты</span>
-                </div>
-                <div class="conveyor-item">
-                    <img src="img/conveyor_pasta.webp" alt="Макароны">
-                    <span>Макароны и крупы</span>
-                </div>
-                 <div class="conveyor-item">
-                    <img src="img/conveyor_dried_fruits.webp" alt="Сухофрукты курага">
-                    <span>Сухофрукты</span>
-                </div>
-                 <div class="conveyor-item">
-                    <img src="img/conveyor_nuggets.webp" alt="Наггетсы">
-                    <span>Наггетсы и снеки</span>
-                </div>
-
-                <div class="conveyor-item">
-                    <img src="img/conveyor_nuts.webp" alt="Фасовка орехов">
-                    <span>Орехи и смеси</span>
-                </div>
-                <div class="conveyor-item">
-                    <img src="img/conveyor_berries.webp" alt="Замороженные ягоды">
-                    <span>Замороженные ягоды</span>
-                </div>
-                 <div class="conveyor-item">
-                    <img src="img/conveyor_dumplings.webp" alt="Пельмени и полуфабрикаты">
-                    <span>Полуфабрикаты</span>
-                </div>
-                <div class="conveyor-item">
-                    <img src="img/conveyor_pasta.webp" alt="Макароны">
-                    <span>Макароны и крупы</span>
-                </div>
-                 <div class="conveyor-item">
-                    <img src="img/conveyor_dried_fruits.webp" alt="Сухофрукты курага">
-                    <span>Сухофрукты</span>
-                </div>
-                 <div class="conveyor-item">
-                    <img src="img/conveyor_nuggets.webp" alt="Наггетсы">
-                    <span>Наггетсы и снеки</span>
-                </div>
+                <div class="conveyor-item"><img src="img/conveyor_nuts.webp" alt="Фасовка орехов"><span>Орехи и смеси</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_berries.webp" alt="Замороженные ягоды"><span>Замороженные ягоды</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_dumplings.webp" alt="Пельмени и полуфабрикаты"><span>Полуфабрикаты</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_pasta.webp" alt="Макароны"><span>Макароны и крупы</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_dried_fruits.webp" alt="Сухофрукты курага"><span>Сухофрукты</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_nuggets.webp" alt="Наггетсы"><span>Наггетсы и снеки</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_nuts.webp" alt="Фасовка орехов"><span>Орехи и смеси</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_berries.webp" alt="Замороженные ягоды"><span>Замороженные ягоды</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_dumplings.webp" alt="Пельмени и полуфабрикаты"><span>Полуфабрикаты</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_pasta.webp" alt="Макароны"><span>Макароны и крупы</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_dried_fruits.webp" alt="Сухофрукты курага"><span>Сухофрукты</span></div>
+                <div class="conveyor-item"><img src="img/conveyor_nuggets.webp" alt="Наггетсы"><span>Наггетсы и снеки</span></div>
             </div>
         </div>
 
-    </div> <div class="scroll-hint">
+    </div>
+
+    <div class="scroll-hint">
         <span>SCROLL</span>
         <div class="scroll-hint-line"></div>
     </div>
-
 </section>
 
 
-<!-- ====================================================================
-     TRUST / SOCIAL PROOF
-     ==================================================================== -->
 <section class="trust section">
     <div class="container">
-
-        <!-- Header -->
         <div class="trust-header reveal">
             <p class="section-tag">ПАРТНЁРЫ И ДОВЕРИЕ</p>
-            <p class="section-desc">
-                3 года контрактной фасовки для Bonduelle. Поставки комбинатам
-                детского питания РБ. Участники Продэкспо и World Food.
-            </p>
+            <p class="section-desc">3 года контрактной фасовки для Bonduelle. Поставки комбинатам детского питания РБ. Участники Продэкспо и World Food.</p>
         </div>
-
-        <!-- Partner chips -->
         <div class="partners-grid reveal d1">
             <img src="img/auchan.png" alt="Ашан" class="partner-logo">
             <img src="img/metro.png" alt="Метро" class="partner-logo">
@@ -215,424 +157,179 @@
             <img src="img/pyaterochka.png" alt="Пятёрочка" class="partner-logo">
             <img src="img/lenta.png" alt="Лента" class="partner-logo">
         </div>
-
-        <!-- Badges -->
         <div class="trust-badges reveal d2">
             <div class="trust-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
-                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
-                    <path d="M4 22h16"/>
-                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
-                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
-                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
                 Продэкспо
             </div>
             <div class="trust-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                 World Food
             </div>
             <div class="trust-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
                 Bonduelle — 3 года
             </div>
         </div>
-
     </div>
 </section>
 
 
-<!-- ====================================================================
-     WHY US / ПРЕИМУЩЕСТВА
-     ==================================================================== -->
 <section class="why section">
     <div class="container">
-
         <div class="reveal">
             <p class="section-tag">ПРЕИМУЩЕСТВА</p>
             <h2 class="section-heading">Почему RIKO</h2>
         </div>
-
         <div class="why-grid">
-
-            <div class="why-card reveal d1">
-                <div class="why-num">01</div>
-                <h3>Одна площадка — весь цикл</h3>
-                <p>Фасовка, маркировка, укладка в короба, паллетирование, хранение, отгрузка. Без посредников и лишних звеньев.</p>
-            </div>
-
-            <div class="why-card reveal d2">
-                <div class="why-num">02</div>
-                <h3>Камеры -18°С</h3>
-                <p>Собственные морозильные камеры. Непрерывная холодовая цепь для замороженной продукции на каждом этапе.</p>
-            </div>
-
-            <div class="why-card reveal d3">
-                <div class="why-num">03</div>
-                <h3>Скорость и точность</h3>
-                <p>До 65 пакетов в минуту. Погрешность дозировки 2–10 гр. Минимум потерь сырья на каждой единице.</p>
-            </div>
-
-            <div class="why-card reveal d4">
-                <div class="why-num">04</div>
-                <h3>Опыт с крупными брендами</h3>
-                <p>3+ года с Bonduelle. Поставки комбинатам детского питания. Знаем требования федеральных сетей.</p>
-            </div>
-
-            <div class="why-card reveal d5">
-                <div class="why-num">05</div>
-                <h3>Работа с НДС</h3>
-                <p>Полный пакет документов. Прозрачная отчётность для бухгалтерии и закупок. Без сюрпризов при аудите.</p>
-            </div>
-
-            <div class="why-card reveal d6">
-                <div class="why-num">06</div>
-                <h3>Экспорт РБ → РФ → СНГ</h3>
-                <p>Логистика в Россию, Казахстан, Узбекистан и другие страны СНГ. Работаем с сетями Беларуси и России.</p>
-            </div>
-
+            <div class="why-card reveal d1"><div class="why-num">01</div><h3>Одна площадка — весь цикл</h3><p>Фасовка, маркировка, укладка в короба, паллетирование, хранение, отгрузка. Без посредников и лишних звеньев.</p></div>
+            <div class="why-card reveal d2"><div class="why-num">02</div><h3>Камеры -18°С</h3><p>Собственные морозильные камеры. Непрерывная холодовая цепь для замороженной продукции на каждом этапе.</p></div>
+            <div class="why-card reveal d3"><div class="why-num">03</div><h3>Скорость и точность</h3><p>До 65 пакетов в минуту. Погрешность дозировки 2–10 гр. Минимум потерь сырья на каждой единице.</p></div>
+            <div class="why-card reveal d4"><div class="why-num">04</div><h3>Опыт с крупными брендами</h3><p>3+ года с Bonduelle. Поставки комбинатам детского питания. Знаем требования федеральных сетей.</p></div>
+            <div class="why-card reveal d5"><div class="why-num">05</div><h3>Работа с НДС</h3><p>Полный пакет документов. Прозрачная отчётность для бухгалтерии и закупок. Без сюрпризов при аудите.</p></div>
+            <div class="why-card reveal d6"><div class="why-num">06</div><h3>Экспорт РБ → РФ → СНГ</h3><p>Логистика в Россию, Казахстан, Узбекистан и другие страны СНГ. Работаем с сетями Беларуси и России.</p></div>
         </div>
     </div>
 </section>
 
 
-<!-- ====================================================================
-     CATEGORIES / НАПРАВЛЕНИЯ
-     ==================================================================== -->
 <section class="categories section">
     <div class="container">
-
         <div class="reveal">
             <p class="section-tag">НАПРАВЛЕНИЯ</p>
             <h2 class="section-heading">5 направлений фасовки</h2>
         </div>
-
         <div class="cat-grid">
-
             <a href="nuts.html" class="cat-card reveal d1">
                 <div class="cat-card-glow"></div>
                 <div class="cat-inner">
-                    <div class="cat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 17 3.5s2 2 2 5c0 .5 0 1-.1 1.4A7 7 0 0 1 11 20z"/>
-                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-                        </svg>
-                    </div>
+                    <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 17 3.5s2 2 2 5c0 .5 0 1-.1 1.4A7 7 0 0 1 11 20z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
                     <h3>Сухофрукты, орехи и их смеси</h3>
                     <p>Флоу-пак от 20 гр до 3 кг. Орехи, семена, сухофрукты, а также фруктово-ореховые миксы любой сложности.</p>
-                    <span class="cat-link">
-                        Подробнее
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-                        </svg>
-                    </span>
+                    <span class="cat-link">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
                 </div>
             </a>
-
             <a href="frozen.html" class="cat-card reveal d2">
                 <div class="cat-card-glow"></div>
                 <div class="cat-inner">
-                    <div class="cat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <path d="M2 12h20"/><path d="M12 2v20"/>
-                            <path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/>
-                            <path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/>
-                        </svg>
-                    </div>
+                    <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></svg></div>
                     <h3>Ягоды, фрукты, овощи и грибы</h3>
                     <p>Мороженые монопродукты и многокомпонентные смеси (до 6 ингредиентов). Камеры -18°С, полная холодовая цепь.</p>
-                    <span class="cat-link">
-                        Подробнее
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-                        </svg>
-                    </span>
+                    <span class="cat-link">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
                 </div>
             </a>
-
             <a href="grocery.html" class="cat-card reveal d3">
                 <div class="cat-card-glow"></div>
                 <div class="cat-inner">
-                    <div class="cat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
-                            <path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/>
-                            <path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/>
-                        </svg>
-                    </div>
+                    <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg></div>
                     <h3>Бакалея и кондитерские изделия</h3>
                     <p>Макароны, печенье, сушки, крупы, сахар, соль и приправы. Бережная фасовка хрупкой продукции.</p>
-                    <span class="cat-link">
-                        Подробнее
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-                        </svg>
-                    </span>
+                    <span class="cat-link">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
                 </div>
             </a>
-
             <a href="semifinished.html" class="cat-card reveal d4">
                 <div class="cat-card-glow"></div>
                 <div class="cat-inner">
-                    <div class="cat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-                            <path d="M7 2v20"/>
-                            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>
-                        </svg>
-                    </div>
+                    <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg></div>
                     <h3>Полуфабрикаты</h3>
                     <p>Куриные наггетсы, котлеты, пельмени, гёдза, сырные палочки. Фасовка в флоу-пак пакет и укладка в коробки.</p>
-                    <span class="cat-link">
-                        Подробнее
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-                        </svg>
-                    </span>
+                    <span class="cat-link">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
                 </div>
             </a>
-
             <a href="frozen.html" class="cat-card reveal d5">
                 <div class="cat-card-glow"></div>
                 <div class="cat-inner">
-                    <div class="cat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <rect width="12" height="12" x="6" y="6" rx="2"/>
-                            <path d="M12 2v4"/><path d="M12 18v4"/><path d="M2 12h4"/><path d="M18 12h4"/>
-                            <path d="m4.93 4.93 2.83 2.83"/><path d="m16.24 16.24 2.83 2.83"/>
-                            <path d="m4.93 19.07 2.83-2.83"/><path d="m16.24 7.76 2.83-2.83"/>
-                        </svg>
-                    </div>
+                    <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect width="12" height="12" x="6" y="6" rx="2"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="m4.93 4.93 2.83 2.83"/><path d="m16.24 16.24 2.83 2.83"/><path d="m4.93 19.07 2.83-2.83"/><path d="m16.24 7.76 2.83-2.83"/></svg></div>
                     <h3>Лёд и заморозка на фризере</h3>
                     <p>Фасовка пищевого льда и услуги шоковой заморозки ягод (малина, клюква) непосредственно на фризере.</p>
-                    <span class="cat-link">
-                        Подробнее
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-                        </svg>
-                    </span>
+                    <span class="cat-link">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
                 </div>
             </a>
-
         </div>
     </div>
 </section>
 
 
-<!-- ====================================================================
-     TECH STATS / ОБОРУДОВАНИЕ
-     ==================================================================== -->
 <section class="tech section">
     <div class="container">
-
         <div class="reveal">
             <p class="section-tag">ОБОРУДОВАНИЕ</p>
             <h2 class="section-heading">Технические характеристики</h2>
         </div>
-
-        <!-- Big numbers -->
         <div class="tech-numbers">
-            <div class="tech-num reveal d1">
-                <div class="tech-val">65</div>
-                <div class="tech-unit">пак/мин</div>
-                <div class="tech-label">Скорость линии (200 гр)</div>
-            </div>
-            <div class="tech-num reveal d2">
-                <div class="tech-val">-18°C</div>
-                <div class="tech-label">Морозильные камеры</div>
-            </div>
-            <div class="tech-num reveal d3">
-                <div class="tech-val">2–10 г</div>
-                <div class="tech-label">Погрешность дозировки</div>
-            </div>
-            <div class="tech-num reveal d4">
-                <div class="tech-val">360–590</div>
-                <div class="tech-unit">мм</div>
-                <div class="tech-label">Ширина плёнки</div>
-            </div>
+            <div class="tech-num reveal d1"><div class="tech-val">65</div><div class="tech-unit">пак/мин</div><div class="tech-label">Скорость линии (200 гр)</div></div>
+            <div class="tech-num reveal d2"><div class="tech-val">-18°C</div><div class="tech-label">Морозильные камеры</div></div>
+            <div class="tech-num reveal d3"><div class="tech-val">2–10 г</div><div class="tech-label">Погрешность дозировки</div></div>
+            <div class="tech-num reveal d4"><div class="tech-val">360–590</div><div class="tech-unit">мм</div><div class="tech-label">Ширина плёнки</div></div>
         </div>
-
-        <!-- Detail pills -->
         <div class="tech-details">
-            <div class="tech-pill reveal d3">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
-                </svg>
-                <span>Флоу-пак, 3 шва</span>
-            </div>
-            <div class="tech-pill reveal d4">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <path d="m7.5 4.27 9 5.15"/>
-                    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
-                    <path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/>
-                </svg>
-                <span>Полноцветная и прозрачная плёнка</span>
-            </div>
-            <div class="tech-pill reveal d5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
-                    <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
-                    <path d="M7 21h10"/><path d="M12 3v18"/>
-                    <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
-                </svg>
-                <span>Фасовка от 100 гр до 5 кг</span>
-            </div>
-            <div class="tech-pill reveal d5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/>
-                    <path d="m14.5 12.5 2-2"/>
-                </svg>
-                <span>Высота пакета — без ограничений</span>
-            </div>
-            <div class="tech-pill reveal d6">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <rect width="20" height="5" x="2" y="3" rx="1"/>
-                    <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/>
-                    <path d="M10 12h4"/>
-                </svg>
-                <span>Термоэтикетка и датирование</span>
-            </div>
-            <div class="tech-pill reveal d6">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
-                    <path d="M15 18H9"/>
-                    <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
-                    <circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>
-                </svg>
-                <span>Полный цикл до паллеты + ПРР</span>
-            </div>
+            <div class="tech-pill reveal d3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>Флоу-пак, 3 шва</span></div>
+            <div class="tech-pill reveal d4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span>Полноцветная и прозрачная плёнка</span></div>
+            <div class="tech-pill reveal d5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg><span>Фасовка от 100 гр до 5 кг</span></div>
+            <div class="tech-pill reveal d5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/></svg><span>Высота пакета — без ограничений</span></div>
+            <div class="tech-pill reveal d6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg><span>Термоэтикетка и датирование</span></div>
+            <div class="tech-pill reveal d6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg><span>Полный цикл до паллеты + ПРР</span></div>
         </div>
-
     </div>
 </section>
 
+
 <section class="gallery section">
     <div class="container">
-
         <div class="gallery-header reveal">
             <div>
                 <p class="section-tag">НАШЕ ПРОИЗВОДСТВО</p>
                 <h2 class="section-heading">Процесс изнутри</h2>
                 <p class="section-desc">Современное оборудование, строгий контроль чистоты и соблюдение температурных режимов на каждом этапе.</p>
             </div>
-
             <div class="carousel-nav">
-                <button class="carousel-btn" onclick="scrollGallery(-1)" aria-label="Назад">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <path d="m15 18-6-6 6-6"/>
-                    </svg>
-                </button>
-                <button class="carousel-btn" onclick="scrollGallery(1)" aria-label="Вперед">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                </button>
+                <button class="carousel-btn" onclick="scrollGallery(-1)" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 18-6-6 6-6"/></svg></button>
+                <button class="carousel-btn" onclick="scrollGallery(1)" aria-label="Вперед"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg></button>
             </div>
         </div>
-
         <div class="carousel-container reveal d2">
             <div class="carousel-track" id="gallery-track">
-
-                <div class="carousel-slide">
-                    <img src="img/production-1.jpg" alt="Линия фасовки">
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/production-2.jpg" alt="Морозильные камеры">
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/production-3.jpg" alt="Процесс маркировки">
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/production-4.jpg" alt="Готовая продукция на паллетах">
-                </div>
-                </div>
+                <div class="carousel-slide"><img src="img/production-1.jpg" alt="Линия фасовки"></div>
+                <div class="carousel-slide"><img src="img/production-2.jpg" alt="Морозильные камеры"></div>
+                <div class="carousel-slide"><img src="img/production-3.jpg" alt="Процесс маркировки"></div>
+                <div class="carousel-slide"><img src="img/production-4.jpg" alt="Готовая продукция на паллетах"></div>
+            </div>
         </div>
-
     </div>
 </section>
 
 
-<!-- ====================================================================
-     PROCESS / КАК РАБОТАЕМ
-     ==================================================================== -->
 <section class="process section">
     <div class="container">
-
         <div class="reveal">
             <p class="section-tag">ПРОЦЕСС</p>
             <h2 class="section-heading">Как работаем</h2>
         </div>
-
         <div class="process-steps">
-
-            <div class="step reveal d1">
-                <div class="step-num">1</div>
-                <h4>Заявка</h4>
-                <p>Получаем ТЗ: продукт, объём, вес, тип упаковки, сроки</p>
-            </div>
-
-            <div class="step reveal d2">
-                <div class="step-num">2</div>
-                <h4>Расчёт</h4>
-                <p>Калькуляция стоимости за 2 часа с учётом всех этапов</p>
-            </div>
-
-            <div class="step reveal d3">
-                <div class="step-num">3</div>
-                <h4>Приёмка</h4>
-                <p>Контроль качества и температуры сырья при поступлении</p>
-            </div>
-
-            <div class="step reveal d4">
-                <div class="step-num">4</div>
-                <h4>Фасовка</h4>
-                <p>Дозировка, упаковка, маркировка, укладка в короба</p>
-            </div>
-
-            <div class="step reveal d5">
-                <div class="step-num">5</div>
-                <h4>Отгрузка</h4>
-                <p>Паллетирование, документы, хранение или отгрузка в сеть</p>
-            </div>
-
+            <div class="step reveal d1"><div class="step-num">1</div><h4>Заявка</h4><p>Получаем ТЗ: продукт, объём, вес, тип упаковки, сроки</p></div>
+            <div class="step reveal d2"><div class="step-num">2</div><h4>Расчёт</h4><p>Калькуляция стоимости за 2 часа с учётом всех этапов</p></div>
+            <div class="step reveal d3"><div class="step-num">3</div><h4>Приёмка</h4><p>Контроль качества и температуры сырья при поступлении</p></div>
+            <div class="step reveal d4"><div class="step-num">4</div><h4>Фасовка</h4><p>Дозировка, упаковка, маркировка, укладка в короба</p></div>
+            <div class="step reveal d5"><div class="step-num">5</div><h4>Отгрузка</h4><p>Паллетирование, документы, хранение или отгрузка в сеть</p></div>
         </div>
     </div>
 </section>
 
-<!-- ====================================================================
-     ВИдео
-     ==================================================================== -->
+
 <section class="video-section section" id="video" style="background: var(--bg);">
     <div class="container">
-
         <div class="video-layout">
-
             <div class="video-text reveal d1">
                 <p class="section-tag">ВИДЕО</p>
                 <h2 class="section-heading">Производство в деле</h2>
-                <p class="section-desc">
-                    Посмотрите, как работает наша линия фасовки замороженных овощей.
-                    Без постановок, только реальные кадры из цеха.
-                </p>
-                <button class="btn btn-outline" style="margin-top: 2rem;" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
-                    Рассчитать партию
-                </button>
+                <p class="section-desc">Посмотрите, как работает наша линия фасовки замороженных овощей. Без постановок, только реальные кадры из цеха.</p>
+                <button class="btn btn-outline" style="margin-top: 2rem;" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">Рассчитать партию</button>
             </div>
-
             <div class="video-player-col reveal d2">
                 <div class="video-wrapper">
                     <div class="video-cover" id="video-cover" onclick="playVideo()">
                         <img src="img/video-poster.webp" alt="Фасовка замороженных овощей">
-                        <div class="play-btn">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M8 5v14l11-7z"/>
-                            </svg>
-                        </div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
                     </div>
                     <video id="promo-video" controls preload="none">
                         <source src="video/production2.mp4" type="video/mp4">
@@ -640,124 +337,55 @@
                     </video>
                 </div>
             </div>
-
         </div>
-
     </div>
 </section>
 
-<!-- ====================================================================
-     FAQ / ЧАСТЫЕ ВОПРОСЫ
-     ==================================================================== -->
+
 <section class="faq section">
     <div class="container">
-
         <div class="reveal" style="text-align: center;">
             <p class="section-tag">ВОПРОСЫ</p>
             <h2 class="section-heading">Частые вопросы</h2>
         </div>
-
         <div class="faq-list">
-
-            <!-- Q1 -->
             <div class="faq-item reveal d1">
-                <div class="faq-q" onclick="toggleFaq(this)">
-                    <span>Какой минимальный объём заказа?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <path d="M12 5v14"/><path d="M5 12h14"/>
-                    </svg>
-                </div>
-                <div class="faq-a">
-                    <p>Минимальный объём обсуждается индивидуально и зависит от типа продукции и упаковки. Мы ориентированы на крупные и регулярные партии для загрузки линий.</p>
-                </div>
+                <div class="faq-q" onclick="toggleFaq(this)"><span>Какой минимальный объём заказа?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+                <div class="faq-a"><p>Минимальный объём обсуждается индивидуально и зависит от типа продукции и упаковки. Мы ориентированы на крупные и регулярные партии для загрузки линий.</p></div>
             </div>
-
-            <!-- Q2 -->
             <div class="faq-item reveal d2">
-                <div class="faq-q" onclick="toggleFaq(this)">
-                    <span>Работаете с НДС?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <path d="M12 5v14"/><path d="M5 12h14"/>
-                    </svg>
-                </div>
-                <div class="faq-a">
-                    <p>Да. Полный пакет документов с НДС. Прозрачная отчётность, соответствующая требованиям федеральных и региональных сетей.</p>
-                </div>
+                <div class="faq-q" onclick="toggleFaq(this)"><span>Работаете с НДС?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+                <div class="faq-a"><p>Да. Полный пакет документов с НДС. Прозрачная отчётность, соответствующая требованиям федеральных и региональных сетей.</p></div>
             </div>
-
-            <!-- Q3 -->
             <div class="faq-item reveal d3">
-                <div class="faq-q" onclick="toggleFaq(this)">
-                    <span>Какую плёнку используете?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <path d="M12 5v14"/><path d="M5 12h14"/>
-                    </svg>
-                </div>
-                <div class="faq-a">
-                    <p>Флоу-пак с 3 швами. Полноцветная брендированная или прозрачная плёнка. Ширина рулона 360–590 мм, высота пакета без ограничений. Плёнку может предоставить заказчик или мы закупим по ТЗ.</p>
-                </div>
+                <div class="faq-q" onclick="toggleFaq(this)"><span>Какую плёнку используете?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+                <div class="faq-a"><p>Флоу-пак с 3 швами. Полноцветная брендированная или прозрачная плёнка. Ширина рулона 360–590 мм, высота пакета без ограничений. Плёнку может предоставить заказчик или мы закупим по ТЗ.</p></div>
             </div>
-
-            <!-- Q4 -->
             <div class="faq-item reveal d4">
-                <div class="faq-q" onclick="toggleFaq(this)">
-                    <span>Какая погрешность дозировки?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <path d="M12 5v14"/><path d="M5 12h14"/>
-                    </svg>
-                </div>
-                <div class="faq-a">
-                    <p>2–10 граммов в зависимости от типа продукта и веса порции. Для порций 200 гр типичная погрешность составляет 2–4 гр.</p>
-                </div>
+                <div class="faq-q" onclick="toggleFaq(this)"><span>Какая погрешность дозировки?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+                <div class="faq-a"><p>2–10 граммов в зависимости от типа продукта и веса порции. Для порций 200 гр типичная погрешность составляет 2–4 гр.</p></div>
             </div>
-
-            <!-- Q5 -->
             <div class="faq-item reveal d5">
-                <div class="faq-q" onclick="toggleFaq(this)">
-                    <span>Предоставляете ответственное хранение?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <path d="M12 5v14"/><path d="M5 12h14"/>
-                    </svg>
-                </div>
-                <div class="faq-a">
-                    <p>Да. Собственные камеры хранения, включая морозильные (-18°С). Готовая продукция хранится до момента отгрузки в сеть или на склад заказчика.</p>
-                </div>
+                <div class="faq-q" onclick="toggleFaq(this)"><span>Предоставляете ответственное хранение?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+                <div class="faq-a"><p>Да. Собственные камеры хранения, включая морозильные (-18°С). Готовая продукция хранится до момента отгрузки в сеть или на склад заказчика.</p></div>
             </div>
-
-            <!-- Q6 -->
             <div class="faq-item reveal d6">
-                <div class="faq-q" onclick="toggleFaq(this)">
-                    <span>В какие регионы отгружаете?</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                        <path d="M12 5v14"/><path d="M5 12h14"/>
-                    </svg>
-                </div>
-                <div class="faq-a">
-                    <p>Беларусь, Россия (все федеральные округа), страны СНГ — Казахстан, Узбекистан и другие. Работаем как с сетями РБ, так и с федеральными сетями РФ.</p>
-                </div>
+                <div class="faq-q" onclick="toggleFaq(this)"><span>В какие регионы отгружаете?</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+                <div class="faq-a"><p>Беларусь, Россия (все федеральные округа), страны СНГ — Казахстан, Узбекистан и другие. Работаем как с сетями РБ, так и с федеральными сетями РФ.</p></div>
             </div>
-
         </div>
     </div>
 </section>
 
 
-<!-- ====================================================================
-     FORM / ЗАЯВКА
-     ==================================================================== -->
 <section class="calc-section section" id="calc">
     <div class="calc-glow"></div>
-
     <div class="container">
         <div class="calc-wrap reveal">
-
             <div class="calc-info">
                 <p class="section-tag">ОНЛАЙН-КАЛЬКУЛЯТОР</p>
                 <h2 class="section-heading">Соберите свой заказ</h2>
-                <p class="section-desc">
-                    Выберите параметры вашей продукции. Система проанализирует загруженность наших линий и подготовит индивидуальное коммерческое предложение.
-                </p>
-
+                <p class="section-desc">Выберите параметры вашей продукции. Система проанализирует загруженность наших линий и подготовит индивидуальное коммерческое предложение.</p>
                 <div class="calc-progress">
                     <div class="progress-labels">
                         <span class="active" id="label-1">Шаг 1. Продукт</span>
@@ -769,35 +397,19 @@
                     </div>
                 </div>
             </div>
-
             <div class="calc-box">
-
                 <div class="calc-step active" id="step-1">
                     <h3>Что будем фасовать?</h3>
                     <div class="calc-grid">
-                        <div class="calc-card" onclick="selectOption(this, 'product')">
-                            <span class="calc-icon">🥜</span>
-                            <span>Орехи и сухофрукты</span>
-                        </div>
-                        <div class="calc-card" onclick="selectOption(this, 'product')">
-                            <span class="calc-icon">🍓</span>
-                            <span>Замороженные ягоды</span>
-                        </div>
-                        <div class="calc-card" onclick="selectOption(this, 'product')">
-                            <span class="calc-icon">🥟</span>
-                            <span>Полуфабрикаты</span>
-                        </div>
-                        <div class="calc-card" onclick="selectOption(this, 'product')">
-                            <span class="calc-icon">🍝</span>
-                            <span>Бакалея / Сыпучие</span>
-                        </div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')"><span class="calc-icon">🥜</span><span>Орехи и сухофрукты</span></div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')"><span class="calc-icon">🍓</span><span>Замороженные ягоды</span></div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')"><span class="calc-icon">🥟</span><span>Полуфабрикаты</span></div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')"><span class="calc-icon">🍝</span><span>Бакалея / Сыпучие</span></div>
                     </div>
                     <button class="btn btn-gold calc-next" onclick="nextStep(2)">Далее →</button>
                 </div>
-
                 <div class="calc-step" id="step-2">
                     <h3>Параметры партии</h3>
-
                     <div class="calc-group">
                         <label>Вес одного пакета (флоу-пак):</label>
                         <div class="calc-pills">
@@ -806,7 +418,6 @@
                             <div class="calc-pill" onclick="selectOption(this, 'weight')">1 кг - 5 кг</div>
                         </div>
                     </div>
-
                     <div class="calc-group" style="margin-top: 20px;">
                         <label>Ориентировочный объем в месяц:</label>
                         <div class="calc-pills">
@@ -815,62 +426,43 @@
                             <div class="calc-pill" onclick="selectOption(this, 'volume')">Более 5 тонн</div>
                         </div>
                     </div>
-
                     <div class="calc-actions">
                         <button class="btn btn-outline" onclick="nextStep(1)">← Назад</button>
                         <button class="btn btn-gold calc-next" onclick="startCalculation()">Рассчитать стоимость</button>
                     </div>
                 </div>
-
                 <div class="calc-step" id="step-3">
-
                     <div id="calc-loader" class="calc-loader">
                         <div class="spinner"></div>
                         <h3 class="pulsate">Анализируем производственные мощности...</h3>
                         <p>Подбираем оптимальную упаковочную линию</p>
                     </div>
-
                     <div id="calc-result" class="calc-result" style="display: none;">
                         <h3>✅ Линия готова к запуску!</h3>
                         <p class="result-desc">Мы зафиксировали ваши параметры. Оставьте номер телефона — наш технолог перезвонит вам в течение 15 минут, задаст пару уточняющих вопросов и назовет точную цену за партию.</p>
-
                         <form onsubmit="handleFinalSubmit(event)">
-                            <div class="field">
-                                <input type="text" placeholder="Ваше имя" required>
-                            </div>
-                            <div class="field">
-                                <input type="tel" placeholder="+375 (XX) XXX-XX-XX" required>
-                            </div>
+                            <div class="field"><input type="text" placeholder="Ваше имя" required></div>
+                            <div class="field"><input type="tel" placeholder="+375 (XX) XXX-XX-XX" required></div>
                             <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center;">
                                 Получить расчет
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                             </button>
                         </form>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
 </section>
 
 
-<!-- ====================================================================
-     FOOTER
-     ==================================================================== -->
 <footer class="footer section" style="padding: 3.5rem 0;">
     <div class="container">
-
         <div class="footer-grid">
-
             <div class="footer-brand">
-                <a href="index.html" class="logo">
-                    <div class="logo-svg"></div>
-                </a>
+                <a href="index.html" class="logo"><div class="logo-svg"></div></a>
                 <p>Промышленная фасовка и копакинг.<br>RIKO GROUP</p>
             </div>
-
             <div>
                 <h4>Направления</h4>
                 <div class="footer-links">
@@ -880,7 +472,6 @@
                     <a href="semifinished.html">Полуфабрикаты</a>
                 </div>
             </div>
-
             <div>
                 <h4>Услуги</h4>
                 <div class="footer-links">
@@ -890,35 +481,24 @@
                     <span>Ответственное хранение</span>
                 </div>
             </div>
-
             <div>
                 <h4>Контакты</h4>
                 <div class="footer-links">
                     <div class="contact-row">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         <a href="tel:+74951084154">+7 (495) 108-41-54</a>
                     </div>
                     <div class="contact-row">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                            <rect width="20" height="16" x="2" y="4" rx="2"/>
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                         <a href="mailto:info@riko-group.com">info@riko-group.com</a>
                     </div>
                     <div class="contact-row" style="align-items: flex-start;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="margin-top: 3px;">
-                            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="margin-top: 3px;"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
                         <span style="line-height: 1.4;">Московская обл., г. Щелково,<br>ул. Заречная, д. 117</span>
                     </div>
                 </div>
             </div>
-
         </div>
-
         <div class="footer-bottom">
             <span>© 2026 RIKO GROUP. Все права защищены.</span>
             <div style="display: flex; gap: 20px;">
@@ -926,13 +506,9 @@
                 <span>Продэкспо · World Food</span>
             </div>
         </div>
-
     </div>
 </footer>
 
-
-<!-- Scripts -->
 <script src="js/main.js"></script>
-
 </body>
 </html>

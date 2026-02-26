@@ -1945,3 +1945,45 @@ p, .hero-sub, .section-desc {
         margin: 0 auto;
     }
 }
+/* ====================================================================
+   CRITICAL MOBILE OVERFLOW FIX
+   Запрещаем горизонтальный скролл на всех уровнях
+   ==================================================================== */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* Hero — убираем фиксированный max-width на контент */
+    .hero-content {
+        max-width: 100% !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* Все абсолютные декоративные элементы с фиксированной шириной */
+    .hero-bg::before,
+    .hero-bg::after,
+    .calc-glow,
+    .form-glow {
+        display: none;
+    }
+
+    /* Контейнер hero */
+    .hero .container {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        padding-top: 5.5rem !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Кнопки — тоже не выходят за край */
+    .hero-btns .btn {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
