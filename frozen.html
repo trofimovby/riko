@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RIKO — контрактная фасовка замороженных овощей, ягод, фруктов и грибов. Камеры -18°С, шоковая заморозка, флоу-пак.">
+
+    <title>RIKO — Фасовка замороженной продукции</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* Специфичный фон для страницы заморозки */
+        .hero-frozen-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background:
+                linear-gradient(to bottom, rgba(7, 7, 11, 0.7) 0%, rgba(7, 7, 11, 0.95) 100%),
+                url('img/hero-frozen.webp') center center / cover no-repeat;
+        }
+        /* Легкое синее свечение для ледяной тематики */
+        .hero-frozen-bg::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.05), transparent 60%);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-svg"></div>
+        </a>
+
+        <div class="nav-links">
+            <a href="nuts.html">Орехи и сухофрукты</a>
+            <a href="frozen.html">Заморозка</a>
+            <a href="grocery.html">Бакалея</a>
+            <a href="semifinished.html">Полуфабрикаты</a>
+        </div>
+
+        <div class="nav-right">
+            <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+                <span>Оставить заявку</span>
+            </button>
+
+            <button class="burger" onclick="toggleMenu()" aria-label="Открыть меню">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mob">
+        <a href="nuts.html">Орехи и сухофрукты</a>
+        <a href="frozen.html">Заморозка</a>
+        <a href="grocery.html">Бакалея</a>
+        <a href="semifinished.html">Полуфабрикаты</a>
+
+        <button class="btn btn-gold" style="margin-top: 1.5rem; width: 100%; justify-content: center;" onclick="toggleMenu(); document.getElementById('calc').scrollIntoView({behavior:'smooth'});">
+            Оставить заявку
+        </button>
+    </div>
+</nav>
+
+<section class="hero" style="min-height: 70vh;">
+    <div class="hero-frozen-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-noise"></div>
+    </div>
+
+    <div class="container" style="position:relative; z-index:2; padding-top:7rem; padding-bottom:4rem;">
+        <div class="hero-content">
+            <div class="hero-label">
+                <div class="hero-label-dot" style="background: #38bdf8;"></div>
+                <span style="color: #38bdf8;">НЕПРЕРЫВНАЯ ХОЛОДОВАЯ ЦЕПЬ</span>
+            </div>
+
+            <h1>
+                Фасовка<br>
+                <span class="hl">замороженной</span> продукции
+            </h1>
+
+            <p class="hero-sub">
+                Срочная упаковка замороженных ягод, овощей, грибов и пищевого льда.
+                Строгое поддержание температуры -18°С на всех этапах. Отсутствие дефростации.
+            </p>
+
+            <div class="hero-btns">
+                <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+                    Рассчитать стоимость
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+                <button class="btn btn-outline" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+                    Что мы фасуем
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <div class="hero-stat-val">-18°C</div>
+                    <div class="hero-stat-label">режим хранения</div>
+                </div>
+                <div>
+                    <div class="hero-stat-val">До 6</div>
+                    <div class="hero-stat-label">компонентов в смеси</div>
+                </div>
+                <div>
+                    <div class="hero-stat-val">100г–5кг</div>
+                    <div class="hero-stat-label">формат пакета</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why section" id="products">
+    <div class="container">
+        <div class="reveal">
+            <p class="section-tag">ВИДЫ ПРОДУКЦИИ</p>
+            <h2 class="section-heading">Что мы фасуем</h2>
+            <p class="section-desc">Упаковываем монопродукты и создаем сложные смеси по рецептуре заказчика для федеральных сетей.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card reveal d1">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🍓</div>
+                <h3>Ягоды и фрукты</h3>
+                <p>Малина, клюква, клубника, вишня, черника, ежевика. Фасовка без повреждения хрупких плодов. Сохранение структуры и внешнего вида.</p>
+            </div>
+
+            <div class="why-card reveal d2">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🥦</div>
+                <h3>Овощи и смеси</h3>
+                <p>Брокколи, цветная капуста, зеленый горошек, стручковая фасоль. Точное дозирование многокомпонентных смесей (до 6 ингредиентов).</p>
+            </div>
+
+            <div class="why-card reveal d3">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🍄</div>
+                <h3>Замороженные грибы</h3>
+                <p>Шампиньоны (целые и резаные), лесные грибы. Бережная подача по конвейеру, исключающая крошение продукта.</p>
+            </div>
+
+            <div class="why-card reveal d4">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🧊</div>
+                <h3>Пищевой лёд</h3>
+                <p>Фасовка кубиков пищевого льда в прочные герметичные пакеты флоу-пак. Высокая скорость работы линии во избежание таяния.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="process section" style="background: var(--bg-card); border-top: 1px solid var(--border);">
+    <div class="container">
+        <div class="reveal">
+            <p class="section-tag">НАШИ МОЩНОСТИ</p>
+            <h2 class="section-heading">Почему нам доверяют заморозку</h2>
+        </div>
+
+        <div class="tech-details" style="margin-top: 3rem; grid-template-columns: repeat(2, 1fr);">
+
+            <div class="tech-pill reveal d1" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Свои камеры хранения -18°С</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Мы забираем сырье в морозильники сразу при приемке. Готовая продукция хранится в камерах до момента отгрузки в вашу фуру.</p>
+            </div>
+
+            <div class="tech-pill reveal d2" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Шоковая заморозка на фризере</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Предоставляем услуги шоковой заморозки (малина, клюква) прямо на фризере перед фасовкой для максимального сохранения качества.</p>
+            </div>
+
+            <div class="tech-pill reveal d3" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Высокая скорость (до 65 пак/мин)</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Скоростные автоматические линии минимизируют время нахождения продукта вне камеры. Продукт не успевает дефростироваться.</p>
+            </div>
+
+            <div class="tech-pill reveal d4" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Любая пленка и маркировка</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Работаем с вашей СТМ-пленкой или закупим прозрачную сами. Наносим термоэтикетки, дату, формируем коробки и паллеты.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="ice-section section" style="background: var(--bg); position: relative; overflow: hidden;">
+    <div class="container">
+        <div class="video-layout-horizontal">
+            <div class="video-player-col reveal d1">
+                <div class="ice-image-wrapper" style="border: 1px solid var(--border); border-radius: 20px; overflow: hidden; box-shadow: 0 0 30px rgba(56, 189, 248, 0.1);">
+                    <img src="img/ice-product.webp" alt="Пищевой лед RIKO" style="width: 100%; display: block;">
+                </div>
+            </div>
+
+            <div class="video-text reveal d2">
+                <p class="section-tag" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">НОВОЕ НАПРАВЛЕНИЕ</p>
+                <h2 class="section-heading">Производство <br><span style="color: #38bdf8;">пищевого льда</span></h2>
+                <p class="section-desc">
+                    Запустили собственную линию по изготовлению и фасовке кристально чистого льда.
+                    Идеальная форма кубика, отсутствие посторонних запахов и удобная упаковка для ритейла и HoReCa.
+                </p>
+                <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                    <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; color: var(--text-secondary);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Лед фраппе и классический кубик
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 10px; color: var(--text-secondary);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Фасовка от 1 кг до 5 кг
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="purity-section section" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+        <div class="video-layout">
+            <div class="video-text reveal d1">
+                <p class="section-tag" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">ТЕХНОЛОГИЯ</p>
+                <h2 class="section-heading">7 ступеней <br>очистки воды</h2>
+                <p class="section-desc">
+                    Наш лед не просто замороженная вода. Мы используем систему обратного осмоса,
+                    обработку ультрафиолетом и угольную фильтрацию. Результат — лед, который не портит вкус напитка и остается прозрачным даже при таянии.
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 2rem;">
+                    <div>
+                        <div style="color: #38bdf8; font-weight: 700; font-size: 20px;">0.01 мкр</div>
+                        <div style="font-size: 12px; color: var(--text-secondary);">тонкость фильтрации</div>
+                    </div>
+                    <div>
+                        <div style="color: #38bdf8; font-weight: 700; font-size: 20px;">100%</div>
+                        <div style="font-size: 12px; color: var(--text-secondary);">без примесей</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-player-col reveal d2">
+                <div class="ice-image-wrapper" style="border: 1px solid var(--border); border-radius: 20px; overflow: hidden; max-width: 450px;">
+                    <img src="img/water-filter.webp" alt="Система очистки воды RIKO" style="width: 100%; display: block;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="calc-section section" id="calc">
+    <div class="calc-glow"></div>
+    <div class="container">
+        <div class="calc-wrap reveal">
+            <div class="calc-info">
+                <p class="section-tag">ОНЛАЙН-КАЛЬКУЛЯТОР</p>
+                <h2 class="section-heading">Рассчитать фасовку заморозки</h2>
+                <p class="section-desc">Выберите параметры партии. Мы проанализируем свободные мощности холодильных камер и дадим точную цену.</p>
+
+                <div class="calc-progress">
+                    <div class="progress-labels">
+                        <span class="active" id="label-1">Шаг 1. Продукт</span>
+                        <span id="label-2">Шаг 2. Объем</span>
+                        <span id="label-3">Шаг 3. Расчет</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progress-fill" style="width: 33%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc-box">
+                <div class="calc-step active" id="step-1">
+    <h3>Что будем фасовать?</h3>
+    <div class="calc-grid">
+        <div class="calc-card" onclick="selectOption(this, 'product')">
+            <span class="calc-icon">🍓</span>
+            <span>Ягоды / Фрукты</span>
+        </div>
+        <div class="calc-card" onclick="selectOption(this, 'product')">
+            <span class="calc-icon">🥦</span>
+            <span>Овощные смеси</span>
+        </div>
+        <div class="calc-card" onclick="selectOption(this, 'product')">
+            <span class="calc-icon">🧊</span>
+            <span>Пищевой лед</span> </div>
+        <div class="calc-card" onclick="selectOption(this, 'product')">
+            <span class="calc-icon">🍄</span>
+            <span>Грибы замороженные</span>
+        </div>
+    </div>
+    <button class="btn btn-gold calc-next" onclick="nextStep(2)">Далее →</button>
+</div>
+
+                <div class="calc-step" id="step-2">
+                    <h3>Параметры партии</h3>
+                    <div class="calc-group">
+                        <label>Вес одного пакета (флоу-пак):</label>
+                        <div class="calc-pills">
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">До 400 г</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">400 г - 1 кг</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">1 кг - 5 кг</div>
+                        </div>
+                    </div>
+                    <div class="calc-group" style="margin-top: 20px;">
+                        <label>Ориентировочный объем в месяц:</label>
+                        <div class="calc-pills">
+                            <div class="calc-pill" onclick="selectOption(this, 'volume')">До 1 тонны</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'volume')">1 - 5 тонн</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'volume')">Более 5 тонн</div>
+                        </div>
+                    </div>
+                    <div class="calc-actions">
+                        <button class="btn btn-outline" onclick="nextStep(1)">← Назад</button>
+                        <button class="btn btn-gold calc-next" onclick="startCalculation()">Рассчитать стоимость</button>
+                    </div>
+                </div>
+
+                <div class="calc-step" id="step-3">
+                    <div id="calc-loader" class="calc-loader">
+                        <div class="spinner"></div>
+                        <h3 class="pulsate">Анализируем холодильные камеры...</h3>
+                        <p>Подбираем оптимальную линию фасовки</p>
+                    </div>
+                    <div id="calc-result" class="calc-result" style="display: none;">
+                        <h3>✅ Мощности подтверждены!</h3>
+                        <p class="result-desc">Оставьте номер телефона — наш технолог перезвонит вам в течение 15 минут, задаст уточняющие вопросы по упаковке и назовет точную цену.</p>
+                        <form onsubmit="handleFinalSubmit(event)">
+                            <div class="field">
+                                <input type="text" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="field">
+                                <input type="tel" placeholder="+7 (495) 108-41-54" required>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center;">
+                                Получить расчет
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer section" style="padding: 3.5rem 0; background: var(--bg); border-top: 1px solid var(--border);">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-svg"></div>
+                </a>
+                <p>Промышленная фасовка и копакинг.<br>RIKO GROUP</p>
+            </div>
+            <div>
+                <h4>Направления</h4>
+                <div class="footer-links">
+                    <a href="nuts.html">Орехи и сухофрукты</a>
+                    <a href="frozen.html">Ягоды, фрукты, овощи</a>
+                    <a href="grocery.html">Бакалея и кондитерские</a>
+                    <a href="semifinished.html">Полуфабрикаты</a>
+                </div>
+            </div>
+            <div>
+                <h4>Услуги</h4>
+                <div class="footer-links">
+                    <span>Флоу-пак фасовка</span>
+                    <span>Термоэтикетка</span>
+                    <span>Паллетирование</span>
+                    <span>Ответственное хранение</span>
+                </div>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <div class="footer-links">
+                    <div class="contact-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <a href="tel:+74951084154">+7 (495) 108-41-54</a>
+                    </div>
+                    <div class="contact-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <a href="mailto:info@riko-group.com">info@riko-group.com</a>
+                    </div>
+                    <div class="contact-row" style="align-items: flex-start;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="margin-top: 3px;"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span style="line-height: 1.4;">Московская обл., г. Щелково,<br>ул. Заречная, д. 117</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 RIKO GROUP. Все права защищены.</span>
+            <div style="display: flex; gap: 20px;">
+                <span>НДС включён</span>
+                <span>Продэкспо · World Food</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

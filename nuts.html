@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RIKO — контрактная фасовка орехов, сухофруктов и смесей. Высокоточные мультиголовы, MAP-среда, бережная упаковка во флоу-пак.">
+
+    <title>RIKO — Фасовка орехов и сухофруктов</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-svg"></div>
+        </a>
+
+        <div class="nav-links">
+            <a href="nuts.html">Орехи и сухофрукты</a>
+            <a href="frozen.html">Заморозка</a>
+            <a href="grocery.html">Бакалея</a>
+            <a href="semifinished.html">Полуфабрикаты</a>
+        </div>
+
+        <div class="nav-right">
+            <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+                <span>Оставить заявку</span>
+            </button>
+
+            <button class="burger" onclick="toggleMenu()" aria-label="Открыть меню">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mob">
+        <a href="nuts.html">Орехи и сухофрукты</a>
+        <a href="frozen.html">Заморозка</a>
+        <a href="grocery.html">Бакалея</a>
+        <a href="semifinished.html">Полуфабрикаты</a>
+
+        <button class="btn btn-gold" style="margin-top: 1.5rem; width: 100%; justify-content: center;" onclick="toggleMenu(); document.getElementById('calc').scrollIntoView({behavior:'smooth'});">
+            Оставить заявку
+        </button>
+    </div>
+</nav>
+
+<section class="hero" style="min-height: 70vh;">
+    <div class="hero-nuts-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-noise"></div>
+    </div>
+
+    <div class="container" style="position:relative; z-index:2; padding-top:7rem; padding-bottom:4rem;">
+        <div class="hero-content">
+            <div class="hero-label">
+                <div class="hero-label-dot" style="background: var(--gold);"></div>
+                <span style="color: var(--gold);">ВЫСОКОТОЧНАЯ ДОЗИРОВКА</span>
+            </div>
+
+            <h1>
+                Фасовка орехов<br>
+                и <span class="hl">сухофруктов</span>
+            </h1>
+
+            <p class="hero-sub">
+                Бережная упаковка дорогостоящего сырья на мультиголовочных дозаторах.
+                Подача инертного газа (MAP) для максимального продления сроков годности и сохранения свежести.
+            </p>
+
+            <div class="hero-btns">
+                <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+                    Рассчитать стоимость
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+                <button class="btn btn-outline" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+                    Виды продукции
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <div class="hero-stat-val">0.5 гр</div>
+                    <div class="hero-stat-label">точность веса</div>
+                </div>
+                <div>
+                    <div class="hero-stat-val">MAP</div>
+                    <div class="hero-stat-label">газовая среда</div>
+                </div>
+                <div>
+                    <div class="hero-stat-val">До 12</div>
+                    <div class="hero-stat-label">компонентов в смеси</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why section" id="products">
+    <div class="container">
+        <div class="reveal">
+            <p class="section-tag">ЧТО МЫ ФАСУЕМ</p>
+            <h2 class="section-heading">Любые виды снеков</h2>
+            <p class="section-desc">Работаем с сырым и жареным сырьем. Создаем сложные многокомпонентные коктейли по вашей рецептуре.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card reveal d1">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🥜</div>
+                <h3>Орехи (сырые/жареные)</h3>
+                <p>Миндаль, фундук, кешью, грецкий орех, фисташки. Бережная фасовка, минимизирующая процент лома дорогого ядра.</p>
+            </div>
+            <div class="why-card reveal d2">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🍇</div>
+                <h3>Сухофрукты и ягоды</h3>
+                <p>Изюм, курага, чернослив, финики, сушеная клюква. Работа со сложными, липкими продуктами без потери скорости.</p>
+            </div>
+            <div class="why-card reveal d3">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🥥</div>
+                <h3>Смеси и коктейли</h3>
+                <p>Студенческие смеси, мюсли, гранола. Высокоточное дозирование разных компонентов в один пакет (до 12 видов).</p>
+            </div>
+            <div class="why-card reveal d4">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🌻</div>
+                <h3>Семечки и суперфуды</h3>
+                <p>Подсолнечник, тыквенные семечки, чиа, киноа. Фасовка мелкой сыпучей продукции в герметичный пакет.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="process section" style="background: var(--bg-card); border-top: 1px solid var(--border);">
+    <div class="container">
+        <div class="reveal">
+            <p class="section-tag">ТЕХНОЛОГИИ</p>
+            <h2 class="section-heading">Особенности фасовки снеков</h2>
+        </div>
+
+        <div class="tech-details" style="margin-top: 3rem; grid-template-columns: repeat(2, 1fr);">
+
+            <div class="tech-pill reveal d1" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:var(--gold); margin-bottom: 15px;"><path d="M21 12a9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9 5 5 0 0 1 3.5 1.5"/><circle cx="12" cy="12" r="2"/><path d="M16 4h2a2 2 0 0 1 2 2v2"/><path d="M22 10v2"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Мультиголовочные дозаторы</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Используем комбинационные весовые дозаторы (мультиголовы). Это гарантирует идеальную точность веса в каждом пакете, исключая перерасход дорогого продукта.</p>
+            </div>
+
+            <div class="tech-pill reveal d2" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:var(--gold); margin-bottom: 15px;"><path d="M17 18a5 5 0 0 0-10 0"/><path d="M12 2v11"/><path d="m8 9 4 4 4-4"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Система бережной подачи</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Наклонные тракты и специальные покрытия бункеров минимизируют высоту падения продукта, предотвращая дробление и бой хрупких ядер орехов.</p>
+            </div>
+
+            <div class="tech-pill reveal d3" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:var(--gold); margin-bottom: 15px;"><path d="M12.5 22H18a2 2 0 0 0 2-2V7l-7-3-7 3v13a2 2 0 0 0 2 2h.5"/><path d="M8 14h.01"/><path d="M11 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M11 18h.01"/><path d="M16 18h.01"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Газовая среда (MAP)</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Замещение воздуха в пакете инертным газом (азот). Это предотвращает окисление жиров в орехах (прогоркание) и значительно увеличивает срок хранения.</p>
+            </div>
+
+            <div class="tech-pill reveal d4" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:var(--gold); margin-bottom: 15px;"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><path d="M12 13v4"/><path d="M12 13l-2 2"/><path d="M12 13l2 2"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Сложные коктейли</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Возможность одновременной работы нескольких дозаторов для создания миксов с точным соблюдением пропорций каждого ингредиента по рецептуре.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="gallery section">
+    <div class="container">
+
+        <div class="gallery-header reveal">
+            <div>
+                <p class="section-tag">ГАЛЕРЕЯ</p>
+                <h2 class="section-heading">Процесс в деталях</h2>
+                <p class="section-desc">Идеальная чистота линий, бережная подача сырья и эталонные швы на каждом пакете флоу-пак.</p>
+            </div>
+
+            <div class="carousel-nav">
+                <button class="carousel-btn" onclick="scrollGallery(-1)" aria-label="Назад">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="carousel-btn" onclick="scrollGallery(1)" aria-label="Вперед">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-container reveal d2">
+            <div class="carousel-track" id="gallery-track">
+
+                <div class="carousel-slide">
+                    <img src="img/nuts-photo-1.webp" alt="Смесь орехов на конвейере">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="img/nuts-photo-2.webp" alt="Мультиголовочный дозатор">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="img/nuts-photo-3.webp" alt="Готовые пакеты флоу-пак с орехами">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="video-section section" id="video" style="background: var(--bg);">
+    <div class="container">
+        <div class="video-layout">
+            <div class="video-text reveal d1">
+                <p class="section-tag">ВИДЕО ПРОЦЕССА</p>
+                <h2 class="section-heading">Фасовка орехового микса</h2>
+                <p class="section-desc">
+                    Посмотрите на работу мультиголовочного дозатора в реальном времени. Высокая скорость формирования пакета в сочетании с бережным отношением к продукту. Точность дозирования — наш приоритет.
+                </p>
+                <button class="btn btn-outline" style="margin-top: 2rem;" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+                    Рассчитать партию
+                </button>
+            </div>
+            <div class="video-player-col reveal d2">
+                <div class="video-wrapper">
+                    <div class="video-cover" id="video-cover" onclick="playVideo()">
+                        <img src="img/video-poster-nuts.webp" alt="Фасовка орехов">
+                        <div class="play-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <video id="promo-video" controls preload="none">
+                        <source src="video/production.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="calc-section section" id="calc">
+    <div class="calc-glow"></div>
+    <div class="container">
+        <div class="calc-wrap reveal">
+            <div class="calc-info">
+                <p class="section-tag">ОНЛАЙН-КАЛЬКУЛЯТОР</p>
+                <h2 class="section-heading">Рассчитать фасовку снеков</h2>
+                <p class="section-desc">Выберите тип сырья и параметры партии. Технолог подберет оптимальное оборудование (мультиголову) и рассчитает стоимость с учетом MAP.</p>
+
+                <div class="calc-progress">
+                    <div class="progress-labels">
+                        <span class="active" id="label-1">Шаг 1. Продукт</span>
+                        <span id="label-2">Шаг 2. Упаковка</span>
+                        <span id="label-3">Шаг 3. Расчет</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progress-fill" style="width: 33%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc-box">
+                <div class="calc-step active" id="step-1">
+                    <h3>Какое сырье фасуем?</h3>
+                    <div class="calc-grid">
+                        <div class="calc-card" onclick="selectOption(this, 'product')">
+                            <span class="calc-icon">🥜</span>
+                            <span>Орехи (моно)</span>
+                        </div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')">
+                            <span class="calc-icon">🍇</span>
+                            <span>Сухофрукты</span>
+                        </div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')">
+                            <span class="calc-icon">🥥</span>
+                            <span>Смеси / Коктейли</span>
+                        </div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')">
+                            <span class="calc-icon">🌻</span>
+                            <span>Семечки / Снеки</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-gold calc-next" onclick="nextStep(2)">Далее →</button>
+                </div>
+
+                <div class="calc-step" id="step-2">
+                    <h3>Параметры партии</h3>
+                    <div class="calc-group">
+                        <label>Вес готового пакета:</label>
+                        <div class="calc-pills">
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">30 г - 100 г</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">100 г - 500 г</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">500 г - 1 кг</div>
+                        </div>
+                    </div>
+                    <div class="calc-group" style="margin-top: 20px;">
+                        <label>Нужна газовая среда (MAP)?</label>
+                        <div class="calc-pills">
+                            <div class="calc-pill" onclick="selectOption(this, 'map')">Да (Азот)</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'map')">Нет (Воздух)</div>
+                        </div>
+                    </div>
+                    <div class="calc-actions">
+                        <button class="btn btn-outline" onclick="nextStep(1)">← Назад</button>
+                        <button class="btn btn-gold calc-next" onclick="startCalculation()">Рассчитать стоимость</button>
+                    </div>
+                </div>
+
+                <div class="calc-step" id="step-3">
+                    <div id="calc-loader" class="calc-loader">
+                        <div class="spinner"></div>
+                        <h3 class="pulsate">Подбираем мультиголовочный дозатор...</h3>
+                        <p>Анализируем оптимальную скорость и точность</p>
+                    </div>
+                    <div id="calc-result" class="calc-result" style="display: none;">
+                        <h3>✅ Оборудование подобрано!</h3>
+                        <p class="result-desc">Мы зафиксировали параметры вашего продукта. Оставьте номер телефона — технолог свяжется с вами, уточнит детали по пленке/этикетке и назовет итоговую цену за упаковку.</p>
+                        <form onsubmit="handleFinalSubmit(event)">
+                            <div class="field">
+                                <input type="text" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="field">
+                                <input type="tel" placeholder="+7 (495) 108-41-54" required>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center;">
+                                Получить КП
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer section" style="padding: 3.5rem 0; background: var(--bg); border-top: 1px solid var(--border);">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="logo-svg"></div>
+                </a>
+                <p>Промышленная фасовка и копакинг.<br>RIKO GROUP</p>
+            </div>
+            <div>
+                <h4>Направления</h4>
+                <div class="footer-links">
+                    <a href="nuts.html">Орехи и сухофрукты</a>
+                    <a href="frozen.html">Ягоды, фрукты, овощи</a>
+                    <a href="grocery.html">Бакалея и кондитерские</a>
+                    <a href="semifinished.html">Полуфабрикаты</a>
+                </div>
+            </div>
+            <div>
+                <h4>Услуги</h4>
+                <div class="footer-links">
+                    <span>Флоу-пак фасовка</span>
+                    <span>Термоэтикетка</span>
+                    <span>Паллетирование</span>
+                    <span>Ответственное хранение</span>
+                </div>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <div class="footer-links">
+                    <div class="contact-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <a href="tel:+74951084154">+7 (495) 108-41-54</a>
+                    </div>
+                    <div class="contact-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <a href="mailto:info@riko-group.com">info@riko-group.com</a>
+                    </div>
+                    <div class="contact-row" style="align-items: flex-start;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="margin-top: 3px;"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span style="line-height: 1.4;">Московская обл., г. Щелково,<br>ул. Заречная, д. 117</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 RIKO GROUP. Все права защищены.</span>
+            <div style="display: flex; gap: 20px;">
+                <span>НДС включён</span>
+                <span>Продэкспо · World Food</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RIKO — контрактная фасовка замороженных полуфабрикатов: пельмени, вареники, котлеты, блинчики. Бережная упаковка без сколов теста, режим -18°С.">
+    <title>RIKO — Фасовка полуфабрикатов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo"><div class="logo-svg"></div></a>
+        <div class="nav-links">
+            <a href="nuts.html">Орехи и сухофрукты</a>
+            <a href="frozen.html">Заморозка</a>
+            <a href="grocery.html">Бакалея</a>
+            <a href="semifinished.html" class="active">Полуфабрикаты</a>
+        </div>
+        <div class="nav-right">
+            <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+                <span>Оставить заявку</span>
+            </button>
+            <button class="burger" onclick="toggleMenu()" aria-label="Открыть меню">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+            </button>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mob">
+        <a href="nuts.html">Орехи и сухофрукты</a>
+        <a href="frozen.html">Заморозка</a>
+        <a href="grocery.html">Бакалея</a>
+        <a href="semifinished.html" class="active">Полуфабрикаты</a>
+        <button class="btn btn-gold" style="margin-top: 1.5rem; width: 100%; justify-content: center;" onclick="toggleMenu(); document.getElementById('calc').scrollIntoView({behavior:'smooth'});">Оставить заявку</button>
+    </div>
+</nav>
+
+<section class="hero" style="min-height: 70vh;">
+    <div class="hero-semi-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-noise"></div>
+    </div>
+
+    <div class="container" style="position:relative; z-index:2; padding-top:7rem; padding-bottom:4rem;">
+        <div class="hero-content">
+            <div class="hero-label">
+                <div class="hero-label-dot" style="background: #38bdf8;"></div>
+                <span style="color: #38bdf8;">БЕЗ СКОЛОВ И ДЕФРОСТАЦИИ</span>
+            </div>
+
+            <h1>
+                Фасовка <span class="hl">полуфабрикатов</span>
+            </h1>
+
+            <p class="hero-sub">
+                Упаковка пельменей, вареников, котлет и блинчиков в пакеты флоу-пак.
+                Бережная подача продукта для защиты хрупкого замороженного теста и строгий контроль температуры -18°С.
+            </p>
+
+            <div class="hero-btns">
+                <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+                    Рассчитать стоимость
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+                <button class="btn btn-outline" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+                    Что фасуем
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <div class="hero-stat-val">100%</div>
+                    <div class="hero-stat-label">сохранность формы</div>
+                </div>
+                <div>
+                    <div class="hero-stat-val">-18°C</div>
+                    <div class="hero-stat-label">холодовая цепь</div>
+                </div>
+                <div>
+                    <div class="hero-stat-val">IP65</div>
+                    <div class="hero-stat-label">стандарт мойки машин</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why section" id="products">
+    <div class="container">
+        <div class="reveal">
+            <p class="section-tag">КАТЕГОРИИ ПРОДУКЦИИ</p>
+            <h2 class="section-heading">Что мы упаковываем</h2>
+            <p class="section-desc">Оборудование настраивается под любой вес и геометрию продукта — от мелких пельменей до крупных котлет.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card reveal d1">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🥟</div>
+                <h3>Пельмени и вареники</h3>
+                <p>Фасовка на мультиголовочных дозаторах с полиуретановым покрытием трактов. Смягчаем удары, чтобы на тесте не было микротрещин и сколов.</p>
+            </div>
+            <div class="why-card reveal d2">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🥩</div>
+                <h3>Котлеты и наггетсы</h3>
+                <p>Упаковка замороженных мясных и куриных полуфабрикатов. Бережная штучная укладка или весовое дозирование в прочные флоу-пак пакеты.</p>
+            </div>
+            <div class="why-card reveal d3">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🥞</div>
+                <h3>Блинчики и сырники</h3>
+                <p>Упаковка готовых замороженных блюд. Точный контроль количества единиц в упаковке. Сохранение идеального внешнего вида.</p>
+            </div>
+            <div class="why-card reveal d4">
+                <div class="why-num" style="font-size: 32px; margin-bottom: 15px;">🥐</div>
+                <h3>Замороженное тесто</h3>
+                <p>Фасовка слоеного и дрожжевого теста в рулонах или пластах. Идеальная герметичность швов предотвращает вымораживание влаги (заветривание).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="process section" style="background: var(--bg-card); border-top: 1px solid var(--border);">
+    <div class="container">
+        <div class="reveal">
+            <p class="section-tag">БЕЗОПАСНОСТЬ И КАЧЕСТВО</p>
+            <h2 class="section-heading">Технологии фасовки</h2>
+        </div>
+
+        <div class="tech-details" style="margin-top: 3rem; grid-template-columns: repeat(2, 1fr);">
+
+            <div class="tech-pill reveal d1" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="M12 2v20"/><path d="m17 7-5-5-5 5"/><path d="m17 17-5 5-5-5"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Минимальная высота падения</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Дозаторы расположены максимально низко к трубе формирователя пакета. Это главный секрет фасовки пельменей без разбитых "ушек".</p>
+            </div>
+
+            <div class="tech-pill reveal d2" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="m2 12 5.25 5 12.75-12"/><path d="M16 12 9.25 19 6 15.5"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Металлодетекторы на линии</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Каждый запаянный пакет проходит через металлодетектор. Гарантируем 100% пищевую безопасность вашей продукции перед отправкой в сети.</p>
+            </div>
+
+            <div class="tech-pill reveal d3" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="M12 2v20"/><path d="M2 12h20"/><circle cx="12" cy="12" r="10"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Мойка по стандарту IP65</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Оборудование выполнено из пищевой нержавеющей стали и выдерживает прямую мойку под давлением. Строжайшее соблюдение санитарных норм.</p>
+            </div>
+
+            <div class="tech-pill reveal d4" style="padding: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/></svg>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Ответственное хранение</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Сразу с линии продукция отправляется в наши собственные камеры хранения (-18°С), где дожидается приезда вашего рефрижератора.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="gallery section">
+    <div class="container">
+        <div class="gallery-header reveal">
+            <div>
+                <p class="section-tag">ГАЛЕРЕЯ</p>
+                <h2 class="section-heading">Процесс в деталях</h2>
+                <p class="section-desc">Идеальная форма продукта, отсутствие наледи и прочные герметичные швы на упаковке.</p>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-btn" onclick="scrollGallery(-1)" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 18-6-6 6-6"/></svg></button>
+                <button class="carousel-btn" onclick="scrollGallery(1)" aria-label="Вперед"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+        </div>
+        <div class="carousel-container reveal d2">
+            <div class="carousel-track" id="gallery-track">
+                <div class="carousel-slide"><img src="img/semi-photo-1.webp" alt="Пельмени на конвейере"></div>
+                <div class="carousel-slide"><img src="img/semi-photo-2.webp" alt="Фасовка котлет"></div>
+                <div class="carousel-slide"><img src="img/semi-photo-3.webp" alt="Готовая продукция в пакетах"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video-section section" id="video" style="background: var(--bg);">
+    <div class="container">
+
+        <div class="video-layout-horizontal">
+
+            <div class="video-text reveal d1">
+                <p class="section-tag">ГОТОВАЯ ПРОДУКЦИЯ</p>
+                <h2 class="section-heading">Контроль и упаковка</h2>
+                <p class="section-desc">
+                    Посмотрите на финальный этап: готовые пакеты проходят проверку и аккуратно укладываются в транспортные короба.
+                    Мы гарантируем не только качество фасовки, но и бережную подготовку к логистике, чтобы товар доехал до полок магазинов в идеальном виде.
+                </p>
+                <button class="btn btn-outline" style="margin-top: 2rem;" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
+                    Обсудить ваш проект
+                </button>
+            </div>
+
+            <div class="video-player-col reveal d2">
+                <div class="video-wrapper-horizontal">
+                    <div class="video-cover" id="video-cover" onclick="playVideo()">
+                        <img src="img/video-poster-warehouse.webp" alt="Склад и упаковка RIKO">
+                        <div class="play-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <video id="promo-video" controls preload="none">
+                        <source src="video/warehouse-process.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="calc-section section" id="calc">
+    <div class="calc-glow"></div>
+    <div class="container">
+        <div class="calc-wrap reveal">
+            <div class="calc-info">
+                <p class="section-tag">ОНЛАЙН-КАЛЬКУЛЯТОР</p>
+                <h2 class="section-heading">Рассчитать фасовку полуфабрикатов</h2>
+                <p class="section-desc">Выберите ваш продукт и формат пакета. Мы проанализируем свободные низкотемпературные мощности и дадим точную цену.</p>
+
+                <div class="calc-progress">
+                    <div class="progress-labels">
+                        <span class="active" id="label-1">Шаг 1. Продукт</span>
+                        <span id="label-2">Шаг 2. Вес</span>
+                        <span id="label-3">Шаг 3. Расчет</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progress-fill" style="width: 33%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc-box">
+                <div class="calc-step active" id="step-1">
+                    <h3>Что будем фасовать?</h3>
+                    <div class="calc-grid">
+                        <div class="calc-card" onclick="selectOption(this, 'product')">
+                            <span class="calc-icon">🥟</span>
+                            <span>Пельмени / Вареники</span>
+                        </div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')">
+                            <span class="calc-icon">🥩</span>
+                            <span>Котлеты / Наггетсы</span>
+                        </div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')">
+                            <span class="calc-icon">🥞</span>
+                            <span>Блинчики / Сырники</span>
+                        </div>
+                        <div class="calc-card" onclick="selectOption(this, 'product')">
+                            <span class="calc-icon">🥐</span>
+                            <span>Замороженное тесто</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-gold calc-next" onclick="nextStep(2)">Далее →</button>
+                </div>
+
+                <div class="calc-step" id="step-2">
+                    <h3>Параметры партии</h3>
+                    <div class="calc-group">
+                        <label>Вес одного пакета:</label>
+                        <div class="calc-pills">
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">400 г - 500 г</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">800 г - 1 кг</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'weight')">Более 1 кг</div>
+                        </div>
+                    </div>
+                    <div class="calc-group" style="margin-top: 20px;">
+                        <label>Объем в месяц:</label>
+                        <div class="calc-pills">
+                            <div class="calc-pill" onclick="selectOption(this, 'volume')">До 3 тонн</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'volume')">3 - 10 тонн</div>
+                            <div class="calc-pill" onclick="selectOption(this, 'volume')">Крупный опт</div>
+                        </div>
+                    </div>
+                    <div class="calc-actions">
+                        <button class="btn btn-outline" onclick="nextStep(1)">← Назад</button>
+                        <button class="btn btn-gold calc-next" onclick="startCalculation()">Рассчитать стоимость</button>
+                    </div>
+                </div>
+
+                <div class="calc-step" id="step-3">
+                    <div id="calc-loader" class="calc-loader">
+                        <div class="spinner"></div>
+                        <h3 class="pulsate">Проверяем холодильные камеры...</h3>
+                        <p>Подбираем линию с бережной подачей</p>
+                    </div>
+                    <div id="calc-result" class="calc-result" style="display: none;">
+                        <h3>✅ Мощности подтверждены!</h3>
+                        <p class="result-desc">Оставьте номер телефона — наш технолог свяжется с вами в течение 15 минут, задаст пару вопросов по геометрии продукта и назовет точную цену.</p>
+                        <form onsubmit="handleFinalSubmit(event)">
+                            <div class="field">
+                                <input type="text" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="field">
+                                <input type="tel" placeholder="+7 (495) 108-41-54" required>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center;">
+                                Получить расчет
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer section" style="padding: 3.5rem 0; background: var(--bg); border-top: 1px solid var(--border);">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><div class="logo-svg"></div></a>
+                <p>Промышленная фасовка и копакинг.<br>RIKO GROUP</p>
+            </div>
+            <div>
+                <h4>Направления</h4>
+                <div class="footer-links">
+                    <a href="nuts.html">Орехи и сухофрукты</a>
+                    <a href="frozen.html">Ягоды, фрукты, овощи</a>
+                    <a href="grocery.html">Бакалея и кондитерские</a>
+                    <a href="semifinished.html">Полуфабрикаты</a>
+                </div>
+            </div>
+            <div>
+                <h4>Услуги</h4>
+                <div class="footer-links">
+                    <span>Флоу-пак фасовка</span>
+                    <span>Термоэтикетка</span>
+                    <span>Паллетирование</span>
+                    <span>Ответственное хранение</span>
+                </div>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <div class="footer-links">
+                    <div class="contact-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <a href="tel:+74951084154">+7 (495) 108-41-54</a>
+                    </div>
+                    <div class="contact-row">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <a href="mailto:info@riko-group.com">info@riko-group.com</a>
+                    </div>
+                    <div class="contact-row" style="align-items: flex-start;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="margin-top: 3px;"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span style="line-height: 1.4;">Московская обл., г. Щелково,<br>ул. Заречная, д. 117</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 RIKO GROUP. Все права защищены.</span>
+            <div style="display: flex; gap: 20px;">
+                <span>НДС включён</span>
+                <span>Продэкспо · World Food</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
