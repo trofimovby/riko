@@ -1333,10 +1333,13 @@ button {
 
     /* Hero mobile fixes */
     .hero .container { padding-top: 5.5rem !important; padding-bottom: 2.5rem !important; }
+    .hero h1         { font-size: 1.95rem !important; line-height: 1.1; word-break: break-word; }
+    .hero-label      { max-width: 100%; white-space: normal; }
+    .hero-label span { font-size: 9px; letter-spacing: 0.08em; }
     .hero-stats    { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2rem; padding-top: 1.5rem; }
     .hero-stat-val { font-size: 22px; }
     .hero-sub      { font-size: 15px !important; }
-    .hero-content  { max-width: 100%; }
+    .hero-content  { max-width: 100%; overflow: hidden; }
 
     /* Fix overflow on inner pages */
     .carousel-container { margin: 0; padding: 0 1.25rem; }
@@ -1378,12 +1381,12 @@ p, .hero-sub, .section-desc {
 
 /* Главный заголовок (Hero) */
 .hero h1 {
-    font-size: clamp(2.8rem, 7vw, 6.2rem); /* Сделали ощутимо крупнее на десктопе */
+    font-size: clamp(2rem, 7vw, 6.2rem); /* 2rem ≈ 32px — безопасный минимум для мобильного */
 }
 
 /* Заголовки секций */
 .section-heading {
-    font-size: clamp(2rem, 5vw, 3.5rem); /* Было до 3rem */
+    font-size: clamp(1.6rem, 5vw, 3.5rem); /* безопасный минимум 1.6rem = ~26px */
 }
 
 /* Заголовки в карточках "Почему мы" и "Направления" */
