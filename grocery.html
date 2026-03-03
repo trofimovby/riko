@@ -14,28 +14,41 @@
 
 <nav class="nav" id="nav">
     <div class="container nav-inner">
-        <a href="index.html" class="logo"><div class="logo-svg"></div></a>
+        <a href="index.html" class="logo">
+            <div class="logo-svg"></div>
+        </a>
+
         <div class="nav-links">
+            <a href="index.html">Главная</a>
             <a href="nuts.html">Орехи и сухофрукты</a>
-            <a href="frozen.html">Заморозка</a>
-            <a href="grocery.html" class="active">Бакалея</a>
+            <a href="frozen.html" >Заморозка</a>
+            <a href="grocery.html" class="active" >Бакалея</a>
             <a href="semifinished.html">Полуфабрикаты</a>
         </div>
+
         <div class="nav-right">
             <button class="btn btn-gold" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">
                 <span>Оставить заявку</span>
             </button>
+
             <button class="burger" onclick="toggleMenu()" aria-label="Открыть меню">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>
+                </svg>
             </button>
         </div>
     </div>
+
     <div class="mobile-menu" id="mob">
+        <a href="index.html">Главная</a>
         <a href="nuts.html">Орехи и сухофрукты</a>
         <a href="frozen.html">Заморозка</a>
-        <a href="grocery.html" class="active">Бакалея</a>
+        <a href="grocery.html">Бакалея</a>
         <a href="semifinished.html">Полуфабрикаты</a>
-        <button class="btn btn-gold" style="margin-top: 1.5rem; width: 100%; justify-content: center;" onclick="toggleMenu(); document.getElementById('calc').scrollIntoView({behavior:'smooth'});">Оставить заявку</button>
+
+        <button class="btn btn-gold" style="margin-top: 1.5rem; width: 100%; justify-content: center;" onclick="toggleMenu(); document.getElementById('calc').scrollIntoView({behavior:'smooth'});">
+            Оставить заявку
+        </button>
     </div>
 </nav>
 

@@ -39,8 +39,9 @@
         </a>
 
         <div class="nav-links">
+            <a href="index.html">Главная</a>
             <a href="nuts.html">Орехи и сухофрукты</a>
-            <a href="frozen.html">Заморозка</a>
+            <a href="frozen.html" class="active">Заморозка</a>
             <a href="grocery.html">Бакалея</a>
             <a href="semifinished.html">Полуфабрикаты</a>
         </div>
@@ -59,6 +60,7 @@
     </div>
 
     <div class="mobile-menu" id="mob">
+        <a href="index.html">Главная</a>
         <a href="nuts.html">Орехи и сухофрукты</a>
         <a href="frozen.html">Заморозка</a>
         <a href="grocery.html">Бакалея</a>
@@ -408,5 +410,22 @@
 </footer>
 
 <script src="js/main.js"></script>
+<style>
+        /* Специфичный фон для страницы заморозки */
+        .hero-frozen-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background:
+                /* Заменили тёмный градиент на светлый, чтобы тёмный текст читался */
+                linear-gradient(to bottom, rgba(248, 250, 255, 0.75) 0%, rgba(248, 250, 255, 0.98) 100%),
+                url('img/hero-frozen.webp') center center / cover no-repeat;
+        }
+        /* Легкое синее свечение для ледяной тематики */
+        .hero-frozen-bg::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.08), transparent 60%);
+        }
+    </style>
 </body>
 </html>
