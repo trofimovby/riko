@@ -479,7 +479,6 @@ button {
 }
 
 .hero h1 {
-    font-size: clamp(2.8rem, 7vw, 6.2rem);
     font-weight: 800;
     line-height: 1.04;
     letter-spacing: -0.03em;
@@ -1360,6 +1359,22 @@ button {
 
     .nav-right .btn span { display: none; }
     .nav-right .btn      { padding: 10px 12px; }
+
+    /* Адаптация карусели для маленьких экранов */
+    .carousel-slide {
+        flex: 0 0 90%;
+    }
+
+    /* Адаптация tech-pill для страниц категорий */
+    .tech-pill {
+        padding: 16px !important;
+    }
+    .tech-pill h4 {
+        font-size: 14px !important;
+    }
+    .tech-pill p {
+        font-size: 12px !important;
+    }
 }
 
 /* endregion */
@@ -1471,20 +1486,6 @@ p, .hero-sub, .section-desc {
     }
 }
 
-@media (max-width: 768px) {
-    .hero-conveyor-wrapper {
-        margin-top: 40px;
-        padding: 15px 0;
-    }
-    .conveyor-item {
-        width: 120px;
-        height: 90px;
-        margin: 0 10px;
-    }
-    .conveyor-item span {
-        font-size: 10px;
-    }
-}
 /* ====================================================================
    КАРУСЕЛЬ ПРОИЗВОДСТВА
    ==================================================================== */
@@ -1578,6 +1579,25 @@ p, .hero-sub, .section-desc {
     .carousel-container {
         margin: 0 -1.25rem;
         padding: 0 1.25rem;
+    }
+
+    /* Адаптация конвейера для планшетов */
+    .hero-conveyor-wrapper {
+        margin-top: 40px;
+        padding: 15px 0;
+    }
+    .conveyor-item {
+        width: 120px;
+        height: 90px;
+        margin: 0 10px;
+    }
+    .conveyor-item span {
+        font-size: 10px;
+    }
+
+    /* Адаптация tech-details для планшетов */
+    .tech-details {
+        grid-template-columns: 1fr !important;
     }
 }
 
@@ -1948,7 +1968,7 @@ p, .hero-sub, .section-desc {
         min-height: auto !important;
     }
     .calc-grid {
-        grid-template-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr !important;
         gap: 10px !important;
     }
     .calc-card {
