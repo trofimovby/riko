@@ -1,0 +1,23 @@
+name: Deploy to Timeweb
+
+on:
+  push:
+    branches:
+      - main # Укажи свою основную ветку (может быть master)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Copy files via SSH/SCP
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.TIMEWEB_HOST }}
+          username: ${{ secrets.TIMEWEB_USER }}
+          password: ${{ secrets.TIMEWEB_PASSWORD }}
+          source: "." # Копируем всё из корня репозитория
+          target: "/home/fasovkatut.com/public_html"
+          rm: true # Опционально: удаляет старые файлы перед загрузкой новых
