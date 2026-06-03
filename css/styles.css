@@ -129,6 +129,12 @@ button {
     100% { background-position:  200% 0; }
 }
 
+@keyframes shimmerHero {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50%      { transform: translateY(-8px); }
@@ -484,16 +490,38 @@ button {
     letter-spacing: -0.03em;
     margin-bottom: 2rem;
     animation: heroFade 1s var(--ease) 0.25s both;
-}
 
-/* Новый shimmer-градиент для акцентов в заголовке */
-.hero h1 .hl {
-    color: transparent;
-    background: linear-gradient(to right, #3b82f6, #60a5fa, #1d4ed8, #3b82f6);
-    background-size: 200% auto;
+    /* Переливающийся градиент для всех hero заголовков */
+    background: linear-gradient(
+        90deg,
+        #0f172a 0%,
+        #3b82f6 25%,
+        #60a5fa 50%,
+        #3b82f6 75%,
+        #0f172a 100%
+    );
+    background-size: 300% 100%;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: shimmer 3s linear infinite;
+    -webkit-text-fill-color: transparent;
+    animation: heroFade 1s var(--ease) 0.25s both, shimmerHero 6s ease-in-out infinite;
+}
+
+/* Усиленный shimmer-градиент для акцентов в заголовке */
+.hero h1 .hl {
+    background: linear-gradient(
+        90deg,
+        #3b82f6 0%,
+        #60a5fa 25%,
+        #93c5fd 50%,
+        #60a5fa 75%,
+        #3b82f6 100%
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmerHero 4s ease-in-out infinite;
     position: relative;
 }
 
@@ -1357,8 +1385,10 @@ button {
         padding: 14px 24px;
     }
 
-    .nav-right .btn span { display: none; }
-    .nav-right .btn      { padding: 10px 12px; }
+    /* Полностью скрываем кнопку "Оставить заявку" в nav-right на мобильных */
+    .nav-right .btn {
+        display: none;
+    }
 
     /* Адаптация карусели для маленьких экранов */
     .carousel-slide {

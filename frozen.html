@@ -14,19 +14,19 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <style>
-        /* Специфичный фон для страницы заморозки */
+        /* Специфичный фон для страницы заморозки - СВЕТЛЫЙ для читаемости */
         .hero-frozen-bg {
             position: absolute;
             inset: 0;
             z-index: 0;
             background:
-                linear-gradient(to bottom, rgba(7, 7, 11, 0.7) 0%, rgba(7, 7, 11, 0.95) 100%),
+                linear-gradient(to bottom, rgba(248, 250, 255, 0.85) 0%, rgba(248, 250, 255, 0.98) 100%),
                 url('img/hero-frozen.webp') center center / cover no-repeat;
         }
         /* Легкое синее свечение для ледяной тематики */
         .hero-frozen-bg::before {
             content: ''; position: absolute; inset: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.05), transparent 60%);
+            background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.08), transparent 60%);
         }
     </style>
 </head>
@@ -170,25 +170,25 @@
 
             <div class="tech-pill reveal d1" style="padding: 24px;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/></svg>
-                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Свои камеры хранения -18°С</h4>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text); font-weight: 700;">Свои камеры хранения -18°С</h4>
                 <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Мы забираем сырье в морозильники сразу при приемке. Готовая продукция хранится в камерах до момента отгрузки в вашу фуру.</p>
             </div>
 
             <div class="tech-pill reveal d2" style="padding: 24px;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Шоковая заморозка на фризере</h4>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text); font-weight: 700;">Шоковая заморозка на фризере</h4>
                 <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Предоставляем услуги шоковой заморозки (малина, клюква) прямо на фризере перед фасовкой для максимального сохранения качества.</p>
             </div>
 
             <div class="tech-pill reveal d3" style="padding: 24px;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Высокая скорость (до 65 пак/мин)</h4>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text); font-weight: 700;">Высокая скорость (до 65 пак/мин)</h4>
                 <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Скоростные автоматические линии минимизируют время нахождения продукта вне камеры. Продукт не успевает дефростироваться.</p>
             </div>
 
             <div class="tech-pill reveal d4" style="padding: 24px;">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:24px; height:24px; color:#38bdf8; margin-bottom: 15px;"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
-                <h4 style="font-size: 16px; margin-bottom: 8px; color: #fff;">Любая пленка и маркировка</h4>
+                <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text); font-weight: 700;">Любая пленка и маркировка</h4>
                 <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">Работаем с вашей СТМ-пленкой или закупим прозрачную сами. Наносим термоэтикетки, дату, формируем коробки и паллеты.</p>
             </div>
 
