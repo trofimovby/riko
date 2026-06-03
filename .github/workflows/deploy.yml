@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.TIMEWEB_USER }}
           password: ${{ secrets.TIMEWEB_PASSWORD }}
           source: "." # Копируем всё из корня репозитория
-          target: "/home/fasovkatut.com/public_html"
+          target: "/home/c/cn185256/fasovkatut.com/public_html"
           rm: true # Опционально: удаляет старые файлы перед загрузкой новых
